@@ -14,10 +14,10 @@
 
 ## 🔧 Tech Stack
 
-- **Backend:** Laravel 10, PHP 8+
+- **Backend:** Laravel 9, PHP 8+
 - **Frontend:** Blade, Bootstrap 5, jQuery
-- **Database:** MySQL
-- **Authentication:** Laravel Breeze / Sanctum
+- **Database:** SQLite
+- **Authentication:** Laravel , PHP(core)
 - **Icons:** FontAwesome / Bootstrap Icons
 - **Version Control:** Git, GitHub
 
