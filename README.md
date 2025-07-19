@@ -1,64 +1,80 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# ✈️ TravoLeads – Travel Lead Management System
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+**TravoLeads** is a Laravel-based CRM designed to help travel agencies manage and track customer inquiries, follow-ups, quotations, and conversions in one place. It offers an intuitive UI, smart lead categorization, and powerful filtering to boost your agency's productivity.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Demo
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+🌐 Live Preview: [click here](https://travoleads.ilikasofttech.com/)
+🧪 Local: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+---
 
-## Learning Laravel
+## 🔧 Tech Stack
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- **Backend:** Laravel 10, PHP 8+
+- **Frontend:** Blade, Bootstrap 5, jQuery
+- **Database:** MySQL
+- **Authentication:** Laravel Breeze / Sanctum
+- **Icons:** FontAwesome / Bootstrap Icons
+- **Version Control:** Git, GitHub
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## 🧩 Key Features
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- 📥 **Lead Submission** with contact, travel date, destination & notes  
+- 🔁 **Follow-Up System** with status tracking (Pending, In Process, Converted, Lost)  
+- 📅 **Calendar Reminders** for important follow-up dates  
+- 📊 **Admin Dashboard** with lead analytics and visual stats  
+- 🏷️ **Lead Tags & Sources** (e.g., Google Ads, WhatsApp, Walk-in)  
+- 🔍 **Search & Filter** by status, agent, destination, and follow-up date  
+- 🔒 **Role-Based Access** (Admin & Agents)  
+- 📎 **File Uploads** for quotes, IDs, and documents  
+- 🔔 **Planned Notifications** for upcoming follow-ups
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+## 🧪 Getting Started
 
-## Contributing
+### 1. Clone the repository
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+git clone https://github.com/singh-sajal/travo_leads
+cd travoleads
+```
 
-## Code of Conduct
+###  2. Install dependencies
+```bash
+composer install
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 3. Set up environment
+#### Copy the example environment file and generate an application key:
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-## Security Vulnerabilities
+#### Update your .env file with database credentials:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```env
+DB_DATABASE=travo_leads_db
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-## License
+### Migrate & Seed
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+php artisan migrate --seed
+```
+
+### Serve the Web Application
+
+```bash
+php artisan serve
+```
+
+Visit the application 👉 [http://127.0.0.1:8000](http://127.0.0.1:8000) 
