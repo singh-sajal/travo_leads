@@ -1,0 +1,35 @@
+.nowcalling {
+display: block;
+position: fixed;
+bottom: 0;
+width: 100%;
+z-index: 9999;
+}
+.callcol,
+.whatsappcol, .mapcol1, .mapcol2 {
+float: left;
+width: 33.33%;
+}
+.callcol {
+background-color: #BE434D;
+}
+.whatsappcol {
+background-color: #4E9948;
+}
+
+.mapcol1 {
+background-color: #0F69AE;
+}
+.mapcol2 {
+background-color: #103298;
+}
+.callcol a,
+.whatsappcol a,
+.mapcol1 a,
+.mapcol2 a{
+display: block;
+padding: 7px 0;
+text-align: center;
+text-decoration: none;
+color: #fff;
+}
